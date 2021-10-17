@@ -88,7 +88,7 @@
 }
 .tabs ul li a {
     margin: 0;
-    color: var(--textColor);
+    /* color: var(--textColor); */
     padding: 0.5rem 1.25rem; 
 }
 .tabs ul li.active a,
