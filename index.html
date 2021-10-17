@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proinfocus Basic-CSS</title>
-    <link rel="stylesheet" href="basic.css" />
-    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="dist/all/basic.min.css" />    
   </head>
   <body>
     <div class="container-full">
@@ -15,8 +14,8 @@
         <h4 class="fwb tcp">Proinfocus Basic-CSS</h4>
       </section>
     </div>
-    <div class="p">
-      <section>
+    <div>
+      <section class="bcl p">
         <h4 class="mb tce">What is Basic-CSS?</h4>
         <p>
           Basic-CSS is a minimalistic <b>Cascading Style Sheet</b> designed to
@@ -26,7 +25,8 @@
           less efforts.
         </p>
       </section>
-      <section>
+      <div class="m"></div>
+      <section class="bcl p">
         <h4 class="mb tce">What is included in <b>Advance</b>?</h4>
         <p>
           Advance CSS which is available via <b>advance.css</b> file combined with <b>advance.js</b> file, which helps in executing the Javascript part of the CSS, has the following options for you.
@@ -40,7 +40,8 @@
         </ul>
         <p>If you use the <b>advance.css</b>, you also need to include <b>advance.js</b> file which helps in executing the Javascript part such as close on click for message and notification.</p>
       </section>
-      <section>
+      <div class="m"></div>
+      <section class="bcl p">
         <h4 class="mb tce">What is included in <b>Common</b>?</h4>
         <p>
           Common CSS which is available via <b>common.css</b> file, has the necessary classes to style the elements with ease. You need not remember the class names. They just come in the perfect abbreviations like for eg: if you want a <b>display:flex</b> you add it to class as '<b>df</b>' and for <b>margin</b> on all directions can be added in the class as '<b>m</b>'. Following are few examples of how you can add classes to your elements.
@@ -55,8 +56,9 @@
         </ul>
         <p>To see more about how the styles elements looks, check out our <a href="examples.html">Examples page</a></p> 
       </section>
-      <section>
-          <h4 class="mb tce">Light and Dark Theme</h4>
+      <div class="m"></div>
+      <section class="bcl p">
+          <h4 class="mb tce"><b>Light</b> and <b>Dark</b> Themes</h4>
           <p>By default, <a href="examples.html">light theme</a> is available. But, if you want to have a <a href="dark-theme-example.html">dark theme</a> for your website, just change the RGB values for dark and light variables.</p>
           <p>The variables are as follows: 
               <br/><b>Dark RGB values</b>
@@ -68,6 +70,15 @@
             --lg: 0;
             --lb: 0;
           </p>
+      </section>
+      <div class="m"></div>
+      <section class="bcl p">
+          <h4 class="mb tce fwb">Getting started...</h4>
+          <ul>
+              <li>To use, link to <a href="dist/all/basic.min.css">basic.min.css</a> file in your head tag of your html. This includes basic, advance and common css for styling.</li>
+              <li>If you just want basic styling, you could use <a href="dist/basic.min.css">basic.min.css</a> file in your head tag of your html.</li>
+              <li>You also need to add script reference, if you are using advance features like message, tabs, notification, etc., The script file <a href="dist/all/basic.min.js">basic.min.js</a> is needed at the bottom just before the ending body tag of your html.</li>
+          </ul>
       </section>
     </div>
   </body>
