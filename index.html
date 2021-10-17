@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic CSS</title>
+    <script defer src="advance.js"></script>
+    <link rel="stylesheet" href="basic.css" />
+    <link rel="stylesheet" href="advanced.css" />
+    <link rel="stylesheet" href="common.css" />
+    <style>
+      :root {
+        /* Uncomment the below line for Dark Theme */
+        /* --dr: 255;
+        --dg: 255;
+        --db: 255;
+        --lr: 20;
+        --lg: 0;
+        --lb: 0; */
+      }
+      * {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <section class="ofh">
+        <b>Header tags example</b>
+        <div class="fdc">
+          <h1 class="tcp">This is a H1 tag</h1>
+          <h2 class="tcs">This is a H2 tag</h2>
+          <h3 class="tcw">This is a H3 tag</h3>
+          <h4 class="tce">This is a H4 tag</h4>
+          <h5 class="tcn">This is a H5 tag</h5>
+          <h6 class="tci">This is a H6 tag</h6>
+        </div>
+      </section>
+
+      <section>
+        <hr />
+        <b class="mb">Breadcrumb example</b>
+        <div class="breadcrumb">
+          <ul>
+            <li><a href="#">You</a></li>
+            <li><a href="#">Are</a></li>
+            <li class="active"><a>Here...</a></li>
+          </ul>
+        </div>
+
+        <hr />
+        <b class="mb">Card example</b>
+        <div class="df fdr jcc">
+          <div class="card">
+            <figure>
+              <img
+                src="https://bulma.io/images/placeholders/1280x960.png"
+                alt="Placeholder image"
+              />
+            </figure>
+            <div class="card-content">
+              <div>
+                <figure>
+                  <img
+                    src="https://bulma.io/images/placeholders/96x96.png"
+                    alt="Placeholder image"
+                  />
+                </figure>
+                <div class="card-person">
+                  <h4>John Smith</h4>
+                  <p>@johnsmith</p>
+                </div>
+              </div>
+              <div class="card-details">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                nec iaculis mauris. <a>@bulmaio</a>. <a href="#">#css</a>
+                <a href="#">#responsive</a>
+                <br />
+                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+        <b class="mb">Tabs example</b>
+        <div class="tabs">
+          <ul>
+            <li class="active"><a href="javascript:;">Pictures</a></li>
+            <li><a href="javascript:;">Music</a></li>
+            <li><a href="javascript:;">Videos</a></li>
+            <li><a href="javascript:;">Documents</a></li>
+          </ul>
+          <div class="tabs-content">
+            <div class="active">
+              <h4 class="mb">Pictures</h4>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos a amet voluptates, dolore magnam dolorem ad ea nemo
+              itaque fugit perspiciatis rerum quidem aspernatur, aperiam quas
+              sapiente voluptatem? Minus atque consequuntur facere earum dolores
+              voluptates consequatur molestias vitae molestiae debitis est nulla
+              hic qui in, beatae quibusdam suscipit modi perspiciatis.
+            </div>
+            <div>
+              <h4 class="mb">Music</h4>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos a amet voluptates, dolore magnam dolorem ad ea nemo
+              itaque fugit perspiciatis rerum quidem aspernatur, aperiam quas
+              sapiente voluptatem? Minus atque consequuntur facere earum dolores
+              voluptates consequatur molestias vitae molestiae debitis est nulla
+              hic qui in, beatae quibusdam suscipit modi perspiciatis.
+            </div>
+            <div>
+              <h4 class="mb">Videos</h4>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos a amet voluptates, dolore magnam dolorem ad ea nemo
+              itaque fugit perspiciatis rerum quidem aspernatur, aperiam quas
+              sapiente voluptatem? Minus atque consequuntur facere earum dolores
+              voluptates consequatur molestias vitae molestiae debitis est nulla
+              hic qui in, beatae quibusdam suscipit modi perspiciatis.
+            </div>
+            <div>
+              <h4 class="mb">Documents</h4>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos a amet voluptates, dolore magnam dolorem ad ea nemo
+              itaque fugit perspiciatis rerum quidem aspernatur, aperiam quas
+              sapiente voluptatem? Minus atque consequuntur facere earum dolores
+              voluptates consequatur molestias vitae molestiae debitis est nulla
+              hic qui in, beatae quibusdam suscipit modi perspiciatis.
+            </div>
+          </div>
+        </div>
+        <div class="tabs bcl py">
+          <ul>
+            <li class="active"><a href="javascript:;">Pictures</a></li>
+            <li><a href="javascript:;">Music</a></li>
+            <li><a href="javascript:;">Videos</a></li>
+            <li><a href="javascript:;">Documents</a></li>
+          </ul>
+          <div class="tabs-content">
+            <div class="active">
+              <h4 class="mb">Pictures</h4>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos a amet voluptates, dolore magnam dolorem ad ea nemo
+              itaque fugit perspiciatis rerum quidem aspernatur, aperiam quas
+              sapiente voluptatem? Minus atque consequuntur facere earum dolores
+              voluptates consequatur molestias vitae molestiae debitis est nulla
+              hic qui in, beatae quibusdam suscipit modi perspiciatis.
+            </div>
+            <div>
+              <h4 class="mb">Music</h4>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos a amet voluptates, dolore magnam dolorem ad ea nemo
+              itaque fugit perspiciatis rerum quidem aspernatur, aperiam quas
+              sapiente voluptatem? Minus atque consequuntur facere earum dolores
+              voluptates consequatur molestias vitae molestiae debitis est nulla
+              hic qui in, beatae quibusdam suscipit modi perspiciatis.
+            </div>
+            <div>
+              <h4 class="mb">Videos</h4>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos a amet voluptates, dolore magnam dolorem ad ea nemo
+              itaque fugit perspiciatis rerum quidem aspernatur, aperiam quas
+              sapiente voluptatem? Minus atque consequuntur facere earum dolores
+              voluptates consequatur molestias vitae molestiae debitis est nulla
+              hic qui in, beatae quibusdam suscipit modi perspiciatis.
+            </div>
+            <div>
+              <h4 class="mb">Documents</h4>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos a amet voluptates, dolore magnam dolorem ad ea nemo
+              itaque fugit perspiciatis rerum quidem aspernatur, aperiam quas
+              sapiente voluptatem? Minus atque consequuntur facere earum dolores
+              voluptates consequatur molestias vitae molestiae debitis est nulla
+              hic qui in, beatae quibusdam suscipit modi perspiciatis.
+            </div>
+          </div>
+        </div>
+
+        <hr />
+        <b class="mb">Message example</b>
+        <div class="message">
+          <div class="message-header">
+            Hello World
+            <button>&#10060;</button>
+          </div>
+          <div class="message-details">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            explicabo labore aliquid vero, laboriosam dolor possimus nihil. Quos
+            dolor optio voluptas provident quaerat officia aut aperiam animi.
+            Maxime, error voluptatum!
+          </div>
+        </div>
+
+        <hr />
+        <b class="mb">Paragraph example</b>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+          minima quisquam facere corrupti! Commodi natus atque voluptatum
+          corporis, laboriosam culpa. Itaque, neque nemo recusandae placeat aut
+          vero quam eum est autem reiciendis enim doloribus quae sapiente et
+          laudantium nobis aliquid dolor dolores! Perspiciatis debitis ratione
+          voluptas veniam quos? Natus hic harum, deleniti, quia dolorum nemo
+          nostrum voluptatem accusamus tempora officiis voluptate ducimus beatae
+          amet. Impedit animi atque autem consequuntur explicabo ab dicta eum.
+          At quas quam harum sunt, ipsa quos, iure a atque rem temporibus
+          placeat accusamus neque mollitia explicabo! Nisi sed similique
+          molestias officia sint aspernatur architecto excepturi ab!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quas ut
+          eveniet necessitatibus nostrum totam iusto ratione praesentium labore
+          velit?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero enim
+          deleniti quibusdam, impedit odit officia eaque similique perspiciatis
+          qui quae ut error debitis molestiae eum? Illo inventore assumenda
+          ipsum, suscipit libero dignissimos culpa. Amet saepe pariatur dolorum
+          assumenda, temporibus porro odio culpa officia! Quisquam, sed iusto
+          recusandae voluptate odio reiciendis.
+        </p>
+      </section>
+
+      <section>
+        <hr />
+        <b>Link and Button Example</b>
+        <div>
+          <a href="#">This is an Anchor tag...</a>
+          <button type="submit">This is a Submit Button...</button>
+          <button type="button">This is a Normal Button...</button>
+          <button type="reset">This is a Reset Button...</button>
+        </div>
+      </section>
+
+      <section>
+        <hr />
+        <b class="mb">Forms Example</b>
+        <form action="">
+          <div>
+            <label for="">Name</label>
+            <div>
+              <input type="text" />
+              <small>Enter your full name including middle name.</small>
+            </div>
+          </div>
+          <div>
+            <label for="">Address</label>
+            <div>
+              <textarea name="" id="" rows="3"></textarea>
+              <small
+                >Enter your complete address including city and pincode.</small
+              >
+            </div>
+          </div>
+          <div>
+            <label for="">City</label>
+            <div>
+              <select name="" id="">
+                <option value="">(Choose City)</option>
+                <option value="Kalaburagi">Kalaburagi</option>
+                <option value="Bengaluru">Bengaluru</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="">Gender</label>
+            <div>
+              <input type="radio" name="gender" checked />Male
+              <input type="radio" name="gender" />Female
+              <input type="radio" name="gender" />Others
+            </div>
+          </div>
+          <hr />
+          <div>
+            <span></span>
+            <div>
+              <div>
+                <input type="checkbox" name="" id="cbox" />
+                <label for="cbox">I agree to the terms and conditions.</label>
+              </div>
+            </div>
+          </div>
+          <div>
+            <span></span>
+            <div>
+              <button type="submit">Save Details</button>
+              <button type="reset">Cancel</button>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <section>
+        <hr />
+        <b class="mb">Table Example</b>
+        <table>
+          <tr>
+            <th>Month</th>
+            <th>Earnings</th>
+            <th>Expenses</th>
+            <th>Savings</th>
+          </tr>
+          <tr>
+            <td>January</td>
+            <td>$200</td>
+            <td>$100</td>
+            <td>$100</td>
+          </tr>
+          <tr>
+            <td>February</td>
+            <td>$200</td>
+            <td>$80</td>
+            <td>$120</td>
+          </tr>
+          <tr>
+            <td>March</td>
+            <td>$200</td>
+            <td>$100</td>
+            <td>$100</td>
+          </tr>
+          <tr>
+            <td>April</td>
+            <td>$200</td>
+            <td>$80</td>
+            <td>$120</td>
+          </tr>
+          <tr>
+            <td>May</td>
+            <td>$200</td>
+            <td>$100</td>
+            <td>$100</td>
+          </tr>
+          <tr>
+            <td>June</td>
+            <td>$200</td>
+            <td>$80</td>
+            <td>$120</td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>$200</td>
+            <td>$100</td>
+            <td>$100</td>
+          </tr>
+          <tr>
+            <td>August</td>
+            <td>$200</td>
+            <td>$80</td>
+            <td>$120</td>
+          </tr>
+          <tr>
+            <td>September</td>
+            <td>$200</td>
+            <td>$100</td>
+            <td>$100</td>
+          </tr>
+          <tr>
+            <td>October</td>
+            <td>$200</td>
+            <td>$80</td>
+            <td>$120</td>
+          </tr>
+          <tr>
+            <td>November</td>
+            <td>$200</td>
+            <td>$100</td>
+            <td>$100</td>
+          </tr>
+          <tr>
+            <td>December</td>
+            <td>$200</td>
+            <td>$80</td>
+            <td>$120</td>
+          </tr>
+        </table>
+      </section>
+
+      <section>
+        <section>
+          <hr />
+          <b class="mb">Unordered List example</b>
+          <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+          </ul>
+        </section>
+        <section>
+          <hr />
+          <b class="mb">Ordered List example</b>
+          <ol>
+            <li>Coffee <a href="#">more...</a></li>
+            <li>Tea</li>
+            <li>Milk</li>
+          </ol>
+        </section>
+      </section>
+
+      <section>
+        <hr>
+        <b class="mb">Notifications</b>
+        <div class="notification w50p asc">
+          <button>&#10060;</button>
+          <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            explicabo labore aliquid vero, laboriosam dolor possimus nihil. Quos
+            dolor optio voluptas provident quaerat officia aut aperiam animi.
+            Maxime, error voluptatum!
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <hr />
+        <b class="mb">Images example</b>
+        <div class="df fdr jcc">
+          <img
+            src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80"
+          />
+
+          <img
+            src="https://images.unsplash.com/photo-1634163294002-96a30ab62dac?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+          />
+
+          <img
+            src="https://images.unsplash.com/photo-1634157031712-5ac0453609c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+          />
+
+          <img
+            src="https://images.unsplash.com/photo-1633114127408-af671c774b39?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+          />
+
+          <img
+            src="https://images.unsplash.com/photo-1634158595197-3257c7496e3b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1336&q=80"
+          />
+        </div>
+      </section>
+    </div>
+    <script>
+      // Turn of autocomplete for all Input and Textarea tags
+      document.querySelector("input").setAttribute("autocomplete", "no")
+      document.querySelector("textarea").setAttribute("autocomplete", "no")
+    </script>
+  </body>
+</html>

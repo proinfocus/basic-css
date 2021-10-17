@@ -1,0 +1,211 @@
+:root {
+    /* Light Theme  */
+    --dr:0; --dg:0; --db:0;
+    --lr:255; --lg:255; --lb:255;
+    --textColor: rgba(var(--dr), var(--db), var(--dg), 0.85);
+    --backgroundColor: rgba(var(--lr), var(--lb), var(--lg), 0.85);
+    --inputBackgroundColor: rgba(var(--dr), var(--db), var(--dg), 0.025);
+    --inputBorderColor:rgba(var(--dr), var(--db), var(--dg), 0.25);
+    --inputHoverBorderColor:rgba(var(--dr), var(--db), var(--dg), 0.5);
+    --submitButtonColor:rgba(var(--dr), var(--db), var(--dg), 0.15);    
+    --normalButtonColor:rgba(var(--dr), var(--db), var(--dg), 0);    
+    --resetButtonColor:rgba(var(--dr), var(--db), var(--dg), 0.05);    
+    --buttonHoverColor:rgba(var(--dr), var(--db), var(--dg), 0.85);
+    --buttonTextColor:rgba(var(--dr), var(--db), var(--dg), 0.85);
+    --buttonHoverTextColor:rgba(var(--lr), var(--lb), var(--lg), 0.85);
+    --tableHeaderBackgroundColor:rgba(var(--dr), var(--db), var(--dg), 0.2);
+    --tableAlternateRowBackgroundColor:rgba(var(--dr), var(--db), var(--dg), 0.05);
+    --tableRowHoverBackgroundColor:rgba(var(--dr), var(--db), var(--dg), 0.1);
+    --tableBorderBackgroundColor:rgba(var(--dr), var(--db), var(--dg), 0.1);
+    --horizontalLineColor:rgba(var(--dr), var(--db), var(--dg), 0.1);
+    --anchorTextColor:#38e;
+    --anchorTextHoverColor:red;
+    --cardBorderColor:rgba(var(--dr), var(--db), var(--dg), 0.1);
+    --boxShadowColor:rgba(var(--dr), var(--db), var(--dg), 0.1);
+    --borderRadius:4px;
+}
+html {
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;    
+}
+body {    
+    background-color: var(--backgroundColor);
+    display: flex;
+    flex-direction: column;    
+    max-width: 90vw;
+    min-height: calc(100vh - 2rem);
+    margin: 1rem auto;
+    font-size: 1rem;
+    color: var(--textColor);
+}
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+}
+section:first-child,
+section:last-child {
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    line-height: 1em;
+}
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2rem; }
+h4 { font-size: 1.5rem; }
+p {
+    margin: 0rem 0 1.2rem 0;
+}
+hr {
+    margin: 1rem 0;
+    height: 1px;
+    background-color: var(--horizontalLineColor);
+    border: 0;
+}
+ul,ol{
+    list-style-position: inside;    
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: var(--anchorTextColor);
+    border: 0;
+    margin: 0.75rem 0.75rem 0 0;
+    padding: 0;    
+    transition: 300ms;
+}
+a:hover,a:active,a:focus {
+    outline: none;
+    color: var(--anchorTextHoverColor);
+    /* text-decoration: underline; */
+    transition: 300ms;
+}
+button[type="button"]{
+    background-color: var(--normalButtonColor);
+}
+button[type="reset"]{
+    background-color: var(--resetButtonColor);
+}
+button {
+    background-color: var(--submitButtonColor);
+    border: 1px solid var(--inputBorderColor);
+    color: var(--buttonTextColor);
+    margin: 0.5rem 0.5rem 0 0;
+    font-size: inherit;
+    padding: 0.35rem 0.7rem;
+    cursor: pointer;
+    border-radius: var(--borderRadius);
+    transition: 300ms;
+}
+button:hover,button:active,button:focus {
+    outline: none;
+    background-color: var(--buttonHoverColor);
+    border: 1px solid var(--inputHoverBorderColor);
+    color: var(--buttonHoverTextColor);
+    transition: 300ms;
+}
+input, textarea, select {
+    background-color: var(--inputBackgroundColor);
+    color: var(--textColor);
+    border: 1px solid var(--inputBorderColor);
+    margin: 0;
+    font-size: inherit;
+    padding: 0.35rem 0.7rem;
+    border-radius: var(--borderRadius);
+    transition: 300ms;
+    width: 100%;
+}
+input:hover,input:active,input:focus,
+textarea:hover,textarea:active,textarea:focus,
+select:hover,select:active,select:focus {
+    outline: none;
+    border: 1px solid var(--inputHoverBorderColor);
+    transition: 300ms;
+}
+input[type="checkbox"], input[type="radio"] {    
+    transform: scale(1.25);
+    padding: 0;
+    line-height: 0rem;
+    margin: 0.3rem 0.6rem 0 0.3rem;
+    width: auto;
+}
+input[type="radio"] {
+    margin-left: 1rem;
+}
+input[type="radio"]:first-child {
+    margin-left: 0.3rem;
+}
+form {    
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+form div {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+form small {
+    opacity: 0.5;
+    font-size: 0.7rem;
+    display: block;
+    margin-top: 0.2rem;
+    width: 100%;
+}
+form div label,
+form div span {
+    flex: 2;
+}
+form div :last-child:not(button, input) {
+    flex: 8;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0;    
+    overflow: auto;
+}
+table tr:nth-child(odd)
+{
+    background-color: var(--tableAlternateRowBackgroundColor);
+}
+table th {
+    background-color: var(--tableHeaderBackgroundColor);
+}
+table td, table th{
+    border: 1px solid var(--tableBorderBackgroundColor);
+    padding: 0.35rem;
+}
+table tr:hover {
+    background-color: var(--tableRowHoverBackgroundColor);
+    transition: 300ms;
+}
+section div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+section img {    
+    display: flex;
+    max-width: 430px;
+    width: 100%;
+    transition: 300ms;
+}
+section img:hover {
+    opacity: 0.75;
+    transition: 300ms;
+}
