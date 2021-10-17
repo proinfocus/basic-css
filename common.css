@@ -64,6 +64,12 @@
 .ttu{text-transform: uppercase;}
 .ttl{text-transform: lowercase;}
 .ttc{text-transform: capitalize;}
+/* Font Size */
+.fsvs { font-size: 0.5rem;}
+.fss { font-size: 0.75rem;}
+.fsn { font-size: 1rem;}
+.fsl { font-size: 1.5rem;}
+.fsvl { font-size: 2rem;}
 /* Text Alignment */
 .tac{text-align: center;}
 .tal{text-align: left;}
@@ -78,17 +84,19 @@
 .ofh {overflow: hidden;}
 .ofa {overflow: auto;}
 /* Margin */
+.nm{margin: 0}
 .m{margin: 1rem}
-.mx{margin: 0 1rem}
-.my{margin: 1rem 0 }
+.mx,.mh{margin-left: 1rem; margin-right: 1rem;}
+.my,.mv{margin-top: 1rem; margin-bottom: 1rem; }
 .ml{margin-left: 1rem}
 .mt{margin-top: 1rem}
 .mr{margin-right: 1rem}
 .mb{margin-bottom: 1rem}
 /* Padding */
+.np{padding: 0}
 .p{padding: 1rem}
-.px{padding: 0 1rem}
-.py{padding: 1rem 0 }
+.px,.ph{padding-left: 1rem; padding-right: 1rem;}
+.py,.pv{padding-top: 1rem; padding-bottom: 1rem;}
 .pl{padding-left: 1rem}
 .pt{padding-top: 1rem}
 .pr{padding-right: 1rem}

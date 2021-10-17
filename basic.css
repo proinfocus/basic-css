@@ -31,17 +31,30 @@ html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    user-select: none;    
+    user-select: none;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+code,pre{
+    font-family: unset;
 }
 body {    
     background-color: var(--backgroundColor);
     display: flex;
     flex-direction: column;    
-    max-width: 90vw;
-    min-height: calc(100vh - 2rem);
-    margin: 1rem auto;
+    min-height: 100vh;
+    margin: auto;
     font-size: 1rem;
     color: var(--textColor);
+}
+.container {
+    max-width: 90vw;
+    padding: 1rem;
+    margin: 1rem auto;
+}
+.container-full {
+    max-width: calc(100vw - 2rem);
+    padding: 1rem;
+    margin: auto;
 }
 section {
     display: flex;
