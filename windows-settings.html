@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #222;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 14px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 20px 15px;
+            width: 300px;
+        }
+
+        li a {
+            display: block;
+            text-decoration: none;
+            color: #ccc;
+            padding: 8px 12px;
+            margin: 4px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            cursor: default;
+        }
+
+        li a span { font-size: 16px !important; background-color: transparent; color: dodgerblue }
+
+        li a:hover {            
+            background-color: #3339;
+        }
+
+        li a.previous,
+        li a.next {
+            background-color: #3339;
+            position: relative;
+        }
+
+        li a.previous::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 3px;
+            height: 16px;
+            background-color: dodgerblue;
+            border-radius: 6px;
+            animation: shrinkDown 200ms cubic-bezier(0.1, 0.7, 1.0, 0.1);
+            transform: translateY(-50%);
+        }
+
+        @keyframes shrinkDown {
+            from {
+                height: 100%;
+                transform: translateY(-100%);
+            }
+
+            to {
+                height: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        li a.next::after {
+            animation: shrink 200ms cubic-bezier(0.1, 0.7, 1.0, 0.1);
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 3px;
+            height: 16px;
+            background-color: dodgerblue;
+            border-radius: 6px;
+            transform: translateY(-50%);
+        }
+
+        @keyframes shrink {
+            from {
+                height: 100%;
+                transform: translateY(100%);
+            }
+
+            to {
+                height: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        .search {
+            position: relative;
+            width: 260px;
+        }
+        .input {
+            margin: 20px 0 0px 20px;
+            background-color: #333;
+            width: 100%;
+            padding: 6px 12px;
+            border-radius: 4px;
+            border: 0.5px solid #333;
+            border-bottom: 1px solid #999;            
+            position: relative;
+            color: white;
+            outline: none;
+        }
+        
+        .search span {
+            right: -15px;
+            font-weight: 300;
+            background-color: transparent;
+            top: 28px;
+            transform: rotate(90deg);
+            position: absolute;
+            font-size: 18px;
+            color: #ccc;                        
+        }
+        .input::placeholder {
+            color: #bbb;
+        }
+        .input:focus {
+            background-color: #222;
+            border: 0.5px solid #333;
+            border-bottom: 2px solid dodgerblue;            
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="search">
+        <input type="text" class="input" placeholder="Find a setting">
+        <span class="material-symbols-outlined">search</span>
+    </div>
+
+    <ul>
+        <li><a data-id="1" class="previous" href="#"><span class="material-symbols-outlined">wysiwyg</span> System</a></li>
+        <li><a data-id="2" href="#"><span class="material-symbols-outlined">bluetooth</span> Bluetooth & devices</a></li>
+        <li><a data-id="3" href="#"><span class="material-symbols-outlined">wifi</span> Network & internet</a></li>
+        <li><a data-id="4" href="#"><span class="material-symbols-outlined" style="color: coral">brush</span> Personalization</a></li>
+        <li><a data-id="5" href="#"><span class="material-symbols-outlined">apps</span> Apps</a></li>
+        <li><a data-id="6" href="#"><span class="material-symbols-outlined" style="color: aqua">person</span> Accounts</a></li>
+        <li><a data-id="7" href="#"><span class="material-symbols-outlined">schedule</span> Time & language</a></li>
+        <li><a data-id="8" href="#"><span class="material-symbols-outlined" style="color: gray">videogame_asset</span> Gaming</a></li>
+        <li><a data-id="9" href="#"><span class="material-symbols-outlined">accessibility</span> Accessibility</a></li>
+        <li><a data-id="10" href="#"><span class="material-symbols-outlined" style="color: gray">shield</span> Privacy & security</a></li>
+        <li><a data-id="11" href="#"><span class="material-symbols-outlined">autorenew</span> Windows Update</a></li>
+    </ul>
+
+    <script>
+        let menus = document.querySelectorAll("li a");
+        const removeLinks = () => menus.forEach(x => x.classList = null)
+
+        let currentIndex = 1;
+        menus.forEach(m => {
+            m.addEventListener("click", e => {
+                removeLinks();
+                let nextIndex = parseInt(e.target.dataset.id);
+                e.target.classList.add((nextIndex > currentIndex) ? "previous" : "next")
+                currentIndex = nextIndex;
+            })
+        });
+    </script>
+</body>
+
+</html>
